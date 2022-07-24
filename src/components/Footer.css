@@ -1,0 +1,24 @@
+.Footer{
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    background-color: #372248;
+    width: 100%;
+}
+img{
+    margin: 5px ;
+    height: 25px;
+}
+.images{
+    margin-left: 30px;
+}
+.thanks{
+    color: white;
+    margin-right: 30px;
+}
+.thanks a{
+    text-decoration: underline ;
+    color: inherit;
+}
