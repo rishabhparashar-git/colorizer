@@ -39,7 +39,7 @@ export default function Main(){
           width:400,
           padding:18,
           border:"1px solid grey",
-          borderRadius:10
+          borderRadius:8
         },
         btn:{
           background:"#e3e3e3",
@@ -48,7 +48,7 @@ export default function Main(){
           height:30,
           cursor:"pointer",
           border:"1px solid grey",
-          borderRadius:10
+          borderRadius:8
         }
         
     }
@@ -62,9 +62,17 @@ export default function Main(){
           borderRadius:"5%",
           boxShadow:"0px 5px 12px black"
         }
+        const pStyle={
+          fontWeight:"bolder",
+          color:"white",
+          position:"relative",
+          top:"50%",
+          left:"50%",
+          transform:"translate(-50%,-50%)"
+        }
         return (
           <div style={divStyle}>
-            <p style={{fontWeight:"bolder",color:"white"}}>{props.c}</p>
+            <p style={pStyle}>{props.c}</p>
           </div>
         )
       }
@@ -73,7 +81,7 @@ export default function Main(){
       <div style={styles.main} >
         <center>
           <input style={styles.input} type="text" onChange={(e)=>{setURL(e.target.value)}} placeholder="Paste your URL" /><br/>
-          <button style={styles.btn} onClick={fetchColors}>press me</button>
+          <button style={styles.btn} onClick={fetchColors}>Show Colors</button>
           <div style={styles.cardHolder}>
             {colorList.map((ele,key) => <ColorCard key={key} c={ele} />)}
           </div>

@@ -7,7 +7,7 @@ export default function Footer(){
         <footer className="Footer">
             <Icons />
             <div className="thanks">
-               <p>Special thanks to <a target="_blank" href="http://colormind.io/">Colormind</a> for <a target="_blank" href="http://colormind.io/api-access/">API</a> 🤍</p> 
+               <p>Special thanks to <a target="_blank" href="https://www.colorfyit.com/">Colorfy It</a> for <a target="_blank" href="https://www.colorfyit.com/api/">API</a> 🤍</p> 
             </div>
         </footer>
     )
